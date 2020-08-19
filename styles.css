@@ -1,0 +1,130 @@
+body {
+	background-image: url(Retro-background.jpg);
+	background-color: blue;
+}
+
+#character-1 {
+	content: url(character-1.png);
+	position: absolute;
+	top: 200px;
+	left: 50px;
+}
+
+.c1punch {
+	animation: c1Punch 350ms;
+}
+
+.jump {
+	animation: jump 500ms;
+}
+
+.c1kick {
+	animation: c1kick 540ms;
+}
+
+.c2jump {
+	animation: jumpc2;
+}
+
+.c2kick {
+	animation: c2kick 540ms;
+}
+#character-2 {
+	display: inline block;
+	content: url(character-2.png);
+	position: absolute;
+	top: 200px;
+	left: 600px;
+	animation: c2kick infinite;
+}
+
+@keyframes jump {
+	0% {
+		top: 200px;
+	}
+	40% {
+		top: 110px;
+	}
+	60% {
+		top: 110px;
+	}
+	100% {
+		top: 200px;
+	}
+}
+
+/*350ms*/
+@keyframes c1Punch {
+	0% {
+		content: url(pa1.png);
+	}
+	16.666666666666668% {
+		content: url(pa2.png);
+	}
+	33.333333333333336% {
+		content: url(pa3.png);
+	}
+	50% {
+		content: url(pa4.png);
+	}
+	66.66666666666667% {
+		content: url(pa5.png);
+	}
+	83.33333333333334% {
+		content: url(pa6.png);
+	}
+	100% {
+		content: url(pa7.png);
+	}
+}
+
+@keyframes c1kick {
+	0% {
+		content: url(kac1/ka1.png);
+	}
+	25% {
+		content: url(kac1/ka2.png);
+	}
+	50% {
+		content: url(kac1/ka3.png);
+	}
+	75% {
+		content: url(kac1/ka4.png);
+	}
+	100% {
+		content: url(kac1/ka5.png);
+	}
+}
+
+@keyframes c2kick {
+	0% {
+		content: url(kac2/ka1.png);
+	}
+	25% {
+		content: url(kac2/ka2.png);
+	}
+	50% {
+		content: url(kac2/ka3.png);
+	}
+	75% {
+		content: url(kac2/ka4.png);
+	}
+	100% {
+		content: url(kac2/ka5.png);
+	}
+}
+
+@keyframes jumpc2 {
+	0% {
+		margin-top: 200px;
+	}
+	40% {
+		margin-top: 110px;
+	}
+	60% {
+		margin-top: 110px;
+	}
+	100% {
+		margin-top: 200px;
+	}
+}

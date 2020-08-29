@@ -35,7 +35,6 @@ body {
 	position: absolute;
 	top: 200px;
 	left: 600px;
-	animation: c2kick infinite;
 }
 
 @keyframes jump {

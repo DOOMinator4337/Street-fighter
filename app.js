@@ -2,6 +2,10 @@ var c1 = document.getElementById("character-1");
 var c1x = 50;
 var c2 = document.getElementById("character-2");
 var c2x = 600;
+var c1pn = false;
+var c2pn = false;
+var c1Health = 10;
+var c2Health = 10;
 
 document.onkeydown = buttonPressed;
 
@@ -42,7 +46,27 @@ function buttonPressed(e) {
 	} else if (e.keyCode == "85") {
 		c2.classList.add("c2kick");
 		setTimeout(function () {
-			c1.classList.remove("c2kick");
+			c2.classList.remove("c2kick");
 		}, 600);
+	}
+}
+
+function checkPunchP1() {
+	if (c1x < c2x + 40 || c1x > c2x) {
+		c1pn = true;
+	}
+}
+
+function checkPunchP2() {
+	if (c1x < c2x + 40 || c1x > c2x) {
+		c2pn = true;
+	}
+}
+
+function subtractHealth() {
+	if (c1pn == true) {
+		c1Health = c1Health - 1;
+	} else if (c2pn == true) {
+		c2Health = c2Health - 1;
 	}
 }

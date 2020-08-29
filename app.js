@@ -13,6 +13,8 @@ function buttonPressed(e) {
 	e = e || window;
 	if (e.keyCode == "69") {
 		c1.classList.add("c1punch");
+		checkPunchP1();
+		subtractHealth();
 		setTimeout(function () {
 			c1.classList.remove("c1punch");
 		}, 500);
@@ -52,13 +54,14 @@ function buttonPressed(e) {
 }
 
 function checkPunchP1() {
-	if (c1x < c2x + 40 || c1x > c2x) {
+	if (c1x > c2x - 50 && c1x < c2x) {
 		c1pn = true;
+		console.log("punched");
 	}
 }
 
 function checkPunchP2() {
-	if (c1x < c2x + 40 || c1x > c2x) {
+	if (c1x < c2x - 40 || c1x > c2x) {
 		c2pn = true;
 	}
 }
@@ -66,6 +69,7 @@ function checkPunchP2() {
 function subtractHealth() {
 	if (c1pn == true) {
 		c1Health = c1Health - 1;
+		console.log("punched");
 	} else if (c2pn == true) {
 		c2Health = c2Health - 1;
 	}

@@ -10,6 +10,27 @@ body {
 	left: 50px;
 }
 
+#character-2 {
+	display: inline block;
+	content: url(character-2.png);
+	position: absolute;
+	top: 200px;
+	left: 600px;
+}
+
+#p1-health {
+	color: rgb(156, 117, 19);
+	position: absolute;
+	top: 10px;
+}
+
+#p2-health {
+	color: rgb(156, 117, 19);
+	position: absolute;
+	left: 700px;
+	top: 10px;
+}
+
 .c1punch {
 	animation: c1Punch 350ms;
 }
@@ -28,13 +49,6 @@ body {
 
 .c2kick {
 	animation: c2kick 540ms;
-}
-#character-2 {
-	display: inline block;
-	content: url(character-2.png);
-	position: absolute;
-	top: 200px;
-	left: 600px;
 }
 
 @keyframes jump {

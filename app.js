@@ -80,10 +80,10 @@ function checkPunchP2() {
 
 function subtractHealth() {
 	if (c1pn == true) {
+		c2counter = c2counter - 1;
+		c2Health.textContent = c2counter;
+	} else if (c2pn == true) {
 		c1counter = c1counter - 1;
 		c1Health.textContent = c1counter;
-		console.log(c1counter);
-	} else if (c2pn == true) {
-		c2Health = c2Health - 1;
 	}
 }

@@ -51,6 +51,10 @@ body {
 	animation: c2kick 540ms;
 }
 
+.c2punch {
+	animation: c2Punch 350ms;
+}
+
 @keyframes jump {
 	0% {
 		top: 200px;
@@ -69,25 +73,49 @@ body {
 /*350ms*/
 @keyframes c1Punch {
 	0% {
-		content: url(pa1.png);
+		content: url(pac1/pa1.png);
 	}
 	16.666666666666668% {
-		content: url(pa2.png);
+		content: url(pac1/pa2.png);
 	}
 	33.333333333333336% {
-		content: url(pa3.png);
+		content: url(pac1/pa3.png);
 	}
 	50% {
-		content: url(pa4.png);
+		content: url(pac1/pa4.png);
 	}
 	66.66666666666667% {
-		content: url(pa5.png);
+		content: url(pac1/pa5.png);
 	}
 	83.33333333333334% {
-		content: url(pa6.png);
+		content: url(pac1/pa6.png);
 	}
 	100% {
-		content: url(pa7.png);
+		content: url(pac1/pa7.png);
+	}
+}
+
+@keyframes c2Punch {
+	0% {
+		content: url(pac2/pa1.png);
+	}
+	16.666666666666668% {
+		content: url(pac2/pa2.png);
+	}
+	33.333333333333336% {
+		content: url(pac2/pa3.png);
+	}
+	50% {
+		content: url(pac2/pa4.png);
+	}
+	66.66666666666667% {
+		content: url(pac2/pa5.png);
+	}
+	83.33333333333334% {
+		content: url(pac2/pa6.png);
+	}
+	100% {
+		content: url(pac2/pa7.png);
 	}
 }
 
